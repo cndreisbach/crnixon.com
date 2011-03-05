@@ -1,0 +1,315 @@
+#resume.hresume
+  #contact.contact.vcard
+    #name-and-address
+      %h1#name.fn.n
+        %span.given-name Clinton
+        %span.additional-name R.
+        %span.family-name Nixon
+      .adr
+        %span.street-address 4400 Lazyriver Dr
+        %br/
+        = succeed "," do
+          %span.locality Durham
+        %span.region NC
+        %span.postal-code 27712
+        %span.country-name USA
+    #contact-methods
+      %ul
+        %li
+          %span.tel
+            %span.value
+              +1 919 360 9150
+            (
+            %span.type> cell
+            )
+        %li
+          Email:
+          %a.email{:href => "mailto:crnixon@gmail.com"}
+            crnixon@gmail.com
+        %li
+          Web:
+          %a.url{:href => "http://crnixon.org"}
+            http://crnixon.org
+        %li
+          %a.url{:href => "http://github.com/crnixon"}
+            GitHub
+        %li
+          %a.url{:href => "http://stackoverflow.com/users/6262/clinton-r-nixon"}
+            StackOverflow
+        %li
+          %a.url{:href => "http://www.linkedin.com/in/crnixon"}
+            LinkedIn
+  #summary
+    %h2 Summary of Qualifications
+    .summary
+      %p
+        I am a driven, well-rounded developer with over 10 years of
+        experience, currently specializing in
+        = succeed "." do
+          %em.skills Ruby
+        While I am proficient
+        with many languages, I find Ruby to be excellent for rapidly
+        creating solid, high-quality web applications.
+      %p
+        I have led teams of developers to success in multiple projects.
+        During those projects, I mentored my fellow programmers to a level
+        of high proficiency, not only in the programming language we were
+        using, but also in best development practices.
+      %p
+        I love learning and enjoy sharing the knowledge I
+        gain with others. In the last year, I learned
+        = succeed "," do
+          %em.skills Scala
+        a JVM-based
+        language, and implemented
+        %a{:href => "http://github.com/crnixon/lemur-scheme"}
+          a simple
+          %span.skills Scheme
+          interpreter in Ruby
+        to better understand programming language implementation. I am a
+        frequent contributor to open-source projects and
+        = succeed "." do
+          %a{:href => "http://speakerrate.com/speakers/14-clinton-r-nixon"} speaker at conferences
+  #experience
+    %h2
+      Professional Experience
+    .vcalendar
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "2007-07-01"}
+            July 2007
+          \-
+          %abbr.dtend
+            Present
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Development Director
+          %br/
+          = succeed "," do
+            %span.org Viget Labs
+          %span.location
+            Durham, NC
+        .description
+          %p
+            Led Durham-based development team and worked as lead developer
+            on many Ruby on Rails projects for established businesses and
+            startup clients. Highlights include:
+          %ul
+            %li
+              %p
+                Developed a platform for designing and selling custom fabric
+                online. Initial site launched as a public beta within three months
+                and is
+                = succeed "." do
+                  %a{:href => "http://www.spoonflower.com/welcome"} now a successful startup
+                %em
+                  Trained the client&rsquo;s developer, who was new to both Ruby and
+                  Rails, to proficiency.
+                He has gone on to develop many new features on his own.
+            %li
+              %p
+                Built a multi-lingual emergency preparedness application for a state
+                government. As part of this project,
+                %em
+                  extended Ruby on Rails' built-in
+                  %span.skills internationalization
+                  support
+                to handle multi-lingual pluralization and
+                = succeed "." do
+                  %a{:href => "http://app.conferenciarails.org/talks/15-deep-internationalization-in-rails"} gave a talk about this at Conferencia Rails 2009
+            %li
+              %p
+                Audited a startup&rsquo;s codebase, then pair-programmed with
+                their main developer and
+                %abbr.skills{:title => "training"} trained
+                him in
+                %span.skills test-driven development
+                and best Ruby practices.
+            %li
+              %p
+                Pioneered the use of the Radiant content management system within
+                Viget and used it to build a site for
+                = succeed "." do
+                  %a{:href => "http://dibs.duke.edu/"}
+                    a high-profile university
+                    department
+                Created an application for
+                grant proposal submission and voting, complete with workflow and
+                permissions, as well as many custom Radiant plug-ins to handle event management,
+                easy-to-use blogs, and a staff directory.
+                %em
+                  Was granted Radiant core
+                  committer privileges.
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "2005-09-01"}
+            September 2005
+          \-
+          %abbr.dtend{:title => "2007-06-01"}
+            June 2007
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Senior Developer
+          %br/
+          = succeed "," do
+            %span.org Lulu Enterprises
+          %span.location
+            Morrisville, NC
+        .description
+          %p
+            Led development team for community features at this startup,
+            meeting the needs of hundreds of thousands of users.
+          %p
+            Migrated
+            %em million-lines-of-code application
+            from PHP 4 to PHP 5
+            and led a team of four developers to
+            %abbr.skills{:title => "refactoring"} refactor
+            the codebase to the
+            Model-View-Controller pattern over three months.
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "2003-07-01"}
+            July 2003
+          \-
+          %abbr.dtend{:title => "2005-09-01"}
+            September 2005
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Lead Developer
+          %br/
+          = succeed "," do
+            %span.org Demand Publishing
+          %span.location
+            New Orleans, LA
+        .description
+          %p
+            Designed numerous web applications in PHP and Ruby on Rails,
+            including a conference registration system and a dynamic PDF creator.
+            %abbr.skills{:title => "managing"} Managed
+            information
+            technology department of developers and information
+            analysts and oversaw the IT administration of
+            = succeed "." do
+              %em
+                multi-million dollar
+                trade shows
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "1999-10-01"}
+            October 1999
+          \-
+          %abbr.dtend{:title => "2003-07-01"}
+            July 2003
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Contract Software Developer
+          %br/
+          %span.location
+            Seattle, WA
+          and
+          %span.location
+            Washington, DC
+        .description
+          %p
+            Worked as a contractor, using Perl and PHP, for organizations such as
+            Boeing, Real Networks, AT&amp;T Wireless, and various government agencies.
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "1995-10-01"}
+            October 1995
+          \-
+          %abbr.dtend{:title => "1999-10-01"}
+            October 1999
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Signals Intelligence Analyst
+          %br/
+          %span.org U.S. Army
+        .description
+          %p Trained as a Korean linguist and signals intelligence analyst. Highlights include:
+          %ul
+            %li
+              %p
+                Worked directly with Republic of Korea army intelligence officers and analysts,
+                using my Korean language skills to translate information.
+            %li
+              %p
+                Awarded two
+                = succeed "." do
+                  %a{:href => "http://en.wikipedia.org/wiki/Achievement_Medal"} Army Achievement Medals
+            %li
+              %p
+                Wrote graphical applications in
+                = succeed "/Tk" do
+                  %span.skills Tcl
+                for use in analyzing radar signal patterns.
+  #talks
+    %h2
+      Talks
+    %ol.talks.publications
+      %li
+        %cite
+          %a{:href => "http://en.oreilly.com/rails2010/public/schedule/detail/14297"}> Migrating Plugins to Rails 3
+          , RailsConf 2010, Baltimore, MD
+      %li
+        %cite>
+          %a{:href => "http://speakerrate.com/talks/1910-advanced-internationalization-in-rails"} Advanced Internationalization in Rails
+        , Conferencia Rails 2008, Madrid, Spain
+      %li
+        %cite>
+          %a{:href => "http://speakerrate.com/talks/1757-the-joy-of-ruby"} The Joy of Ruby
+        , 756Studio, Hampton Roads, VA
+      %li
+        %cite>
+          %a{:href => "http://crnixon.org/talks/scala"} Scala: A Modern Language
+        , Developer Day Durham 2009, Durham, NC
+      %li
+        %cite>
+          %a{:href => "http://www.slideshare.net/crnixon/unearthed-arcana-for-web-people"} Unearthed Arcana for Web People
+        , Refresh the Triangle, Durham, NC
+      %li
+        %cite>
+          %a{:href => "http://crnixon.org/talks/rails-plugins.html"} Extending Rails: Understanding and Building Plugins
+        , O'Reilly Open Source Conference 2008, Portland, OR
+      %li
+        %cite>
+          %a{:href => "http://www.vimeo.com/421897"} Web Application Security 2006
+        , Refresh the Triangle, Durham, NC
+      %li
+        %cite>
+          %a{:href => "http://conferences.oreillynet.com/cs/os2007/view/e_sess/12772"} Untangling the Web: Dealing with Legacy PHP Code
+        , O'Reilly Open Source Conference 2007, Portland, OR
+  #facts
+    %h2
+      Other Facts About Me
+    %ul
+      %li
+        %p
+          My favorite programming books are
+          %cite Working Effectively with Legacy Code
+          by Michael Feathers,
+          %cite Code Complete
+          by Steve McConnell, and
+          %cite
+            Effective
+            Java
+          by Joshua Bloch. I haven't used Java professionally, but I found Bloch's
+          book to be applicable to
+          %span.skills object-oriented development
+          in any language.
+      %li
+        %p
+          I play the
+          = succeed "." do
+            %span.skills ukulele
+      %li
+        %p
+          I am the designer and author of
+          = succeed "." do
+            %a{:href => "http://crngames.com/"} several well-loved roleplaying games
