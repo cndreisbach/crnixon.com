@@ -1,0 +1,102 @@
+Date: 14 December 2008
+Summary: Like many people, I have a problem with overcommitting myself. I love getting things done, so I often jump on every opportunity I have. This weekend, I found out about an exciting opportunity for me to conduct some training in the spring. In order to see if that will be feasible, I sat down and made a time budget.
+
+# Making A Time Budget
+
+Like many people, I have a problem with overcommitting myself. I love getting things done, so I often jump on every opportunity I have. This weekend, I found out about an exciting opportunity for me to conduct some training in the spring. In order to see if that will be feasible, I sat down and made a _time budget_.
+
+To make a time budget, you start with a table like the following:
+
+![A blank time budget](/attachments/time_budget_blank.jpg)
+
+I've split each day into morning, afternoon, and evening, with about four expected hours in each. Between eating and miscellaneous stuff, that's probably as much as I'm going to have.
+
+Then, you write down everything you have to or want to do, with an estimated number of hours it'll take per week beside it.
+
+<blockquote>
+Work: 40 (M-F afternoon)
+School: 12
+Ruby hack night: 4 (1/mon 1st Thu)
+Refresh the Triangle: 4 (1/mon 4th Thu)
+Functional Meetup: 4 (1/mon 3rd Thu)
+Church stewardship committee: 4
+Services: 2 (Sun morning)
+ERUUF-CF: 2 (2x/month Sun afternoon)
+Camp Nerdly planning: 2
+Self-organization: 2 (Sun afternoon)
+Friday night date: 4 (Fri night)
+Game with friends: 4 (Mon night)
+Spanish classes: 2 (Wed 6-8pm)
+Create Scala course: 4
+1 night/week relaxing: 4
+</blockquote>
+
+All that equals about 86 hours, which is more than I have in a week.
+
+After that, you start putting stuff into the schedule when you expect to do it during the week, with the stuff you have to do going in first. My first attempt looked like this:
+
+![First draft of my time budget](/attachments/time_budget_filled.jpg)
+
+After looking at this a while, I determined it was untenable. Relaxation's split up and will get cut into, and I'm expecting I'll get up each Sunday, work for 2 hours on a committee, go to church, do homework, sometimes go to a meetup, and then get organized for the week. Not likely. This isn't even taking into account stuff like cleaning my house. Something had to give. It wasn't fun cutting anything, but I finally cut out the Spanish class I want to take. It'll still be there in the summer, and I'll be done with my bachelor's degree by then, so I'll have a lot more time.
+
+I drew out my schedule once again, and ended up with:
+
+![Final draft of my time budget](/attachments/time_budget_final.jpg)
+
+This is way better. I've got two 2 hour slots to just be at home, cleaning up or being a handyman, and one of them is after a 2 hour homework slot. This gives me a soft slot for homework to cut into if I have to. I've got a whole Saturday night to relax and do something, and a 2 hour "overflow" slot to cram extra stuff into.
+
+Here's the final table in HTML:
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+    <th>Sat</th>
+    <th>Sun</th>
+  </tr>
+  <tr>
+    <th rowspan="2">Morning</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">School</td>
+    <td>Overflow</td>
+  </tr>
+  <tr>
+    <td>UU services</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Afternoon</th>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">Work</td>
+    <td rowspan="2">School</td>
+    <td>School</td>
+  </tr>
+  <tr>
+    <td>ERUUF-CF (2/mon)</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Evening</th>
+    <td rowspan="2">Game night</td>
+    <td>Camp Nerdly prep</td>
+    <td>School</td>
+    <td rowspan="2">Tech/meetup event</td>
+    <td rowspan="2">Friday night date!</td>
+    <td rowspan="2">Relax!</td>
+    <td>Organization</td>
+  </tr>
+  <tr>
+    <td>Stewardship</td>
+    <td>@ Home</td>  
+    <td>@ Home</td>  
+  </tr>
+</table>

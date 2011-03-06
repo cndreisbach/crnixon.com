@@ -1,0 +1,25 @@
+Date: 14 May 2009
+Categories: rails
+Summary: I've searched a lot for this answer, and only come up with questions. Today, I finally figured out how to make this work.
+
+# How to Make jRails work with ActiveScaffold
+
+I've searched a lot for this answer, and only [come up with questions](http://markmail.org/message/rsgoijgaasvd4abv). Today, I finally figured out how to make this work.
+
+First, I need to make jQuery not conflict with Prototype. I hate using both, but ActiveScaffold demands it, as it's got some Prototype-specific JavaScript. In my layout, I have this:
+
+    <%= javascript_include_tag 'prototype', 'effects' %>
+    <%= javascript_include_tag 'jquery-1.3.2', 'jrails' -%>	
+    <script type="text/javascript">
+      jQuery.noConflict();
+    </script>
+
+jRails overrides all my RJS methods, which is fine, but I need it to use `jQuery` instead of `$` to call jQuery methods now, since I'm in no-conflict mode. All my ActiveScaffold controllers inherit from an `AdminController` that I am using to restrict access. This is a perfect place to fix this behavior:
+
+    class AdminController < ApplicationController
+      before_filter :jquery_noconflict
+
+      def jquery_noconflict
+        ActionView::Helpers::PrototypeHelper.const_set(:JQUERY_VAR, 'jQuery')
+      end
+    end  

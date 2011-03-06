@@ -1,0 +1,49 @@
+Date: 3 September 2008
+Summary: I recently read Neal Ford's The Productive Programmer and it was fantastic. One of the key points in it that hit home was that you should automate anything you have to do twice, even if it takes longer to automate than it would to do it by hand, as you'll probably have to do it many more times.
+
+# Relentless Automation, or Useful Stuff Roundup
+
+I recently read Neal Ford's [The Productive Programmer](http://productiveprogrammer.com/wiki/index.php/Main_Page) and it was fantastic. One of the key points in it that hit home was that you should automate anything you have to do twice, even if it takes longer to automate than it would to do it by hand, as you'll probably have to do it many more times. With that in mind, I've been using others' and my own automated tasks way more often. Here's a roundup of the most useful stuff I've found or created:
+
+### Quickly jumping to projects
+
+Muness Alrubaie wrote a good post on how to [automatically create aliases to `cd` to your projects](http://muness.blogspot.com/2008/06/lazy-bash-cd-aliaes.html). Being able to jump to my weblog by typing `crnixon.org` or to my [spect project](http://github.com/vigetlabs/spect/tree/master) by typing `spect` has been super useful.
+
+### Reading gem source code
+
+I read the source code to gems I'm working with for documentation all the time. I used to have an alias, so I could type `egem capis` and it would open the capistrano gem. Unfortunately, it just did an `ls | head -1`, so it'd grab the first gem directory that matched the argument.
+
+[`gemedit`](http://gemedit.rubyforge.org) is a way better implementation of that. It not only prompts you if your argument is ambiguous, but it also has bash completion built in. Add the following to your `.profile` and you're set:
+
+    complete -C "/opt/local/bin/gemedit --complete" gemedit
+
+### Rake completion
+
+Speaking of completion, I might as well add it to `rake`, right?
+
+    export COMP_WORDBREAKS=${COMP_WORDBREAKS/\:/}
+
+    _rakecomplete() {
+      COMPREPLY=($(compgen -W "`rake -s -T | awk '{{print $2}}'`" \
+        -- ${COMP_WORDS[COMP_CWORD]}))
+      return 0
+    }
+    complete -o default -o nospace -F _rakecomplete rake
+
+Great! Now I can eliminate even more typing.
+
+### My ultimate automation tool, Thor
+
+There's a lot of tasks I do all the time: provision new boxes for Rails, start new projects, setup Apache virtual hosts, and put my SSH key on a new machine, just to start. I could write a separate script for each of these, but it seems like I should be able to collect and distribute these tasks, similar to `rake` tasks. Yehuda Katz wrote a tool called [Thor](http://yehudakatz.com/2008/05/12/by-thors-hammer/) a few months ago that fits the bill perfectly. It's a lot like `rake`, but it deals with command-line arguments sanely, uses standard Ruby classes, and has a script management system.
+
+Usting Thor and Capistrano, I've now got [a script that provisions an Ubuntu box from the base install to a full Apache + Passenger + MySQL Rails stack](http://github.com/crnixon/thor_tasks/tree/master/provision_ubuntu.thor).  Each one of the tasks above, I was able to easily script, and I've [put all my scripts on GitHub](http://github.com/crnixon/thor_tasks/tree/master). Adding [cypher's thor-git scripts](http://github.com/cypher/thor-git/tree/master) on top of those has taken my automation-fu to a new level.
+
+And, of course, I couldn't use Thor without bash completion:
+
+    _thorcomplete() {
+      COMPREPLY=($(compgen -W \
+        "`thor -T | grep -v "^\-\+\|Tasks" | awk '{{print $1}}'`" \
+        -- ${COMP_WORDS[COMP_CWORD]}))
+    }
+    complete -o default -o nospace -F _thorcomplete thor
+

@@ -1,1 +1,19 @@
-%section.articles= article_summaries(latest_articles)
+%section.introduction
+  %h1 Hello!
+
+  :markdown
+    I'm Clinton R. Nixon, a software developer in Durham, NC.
+
+    I specialize in:
+
+    * Building web applications with Ruby, Rails, and JavaScript
+    * Turning around web applications that are over-complex, hard-to-maintain, or not scaling
+    * Training developers in best practices for modern, lean development
+
+    If it sounds like I could help you or your organization, [send me an email](mailto:crnixon@gmail.com).
+
+%section.articles
+  %h2 Recent Articles
+  = article_summaries(latest_articles)
+
+

@@ -1,0 +1,12 @@
+Date: 3 December 2008
+Summary: Mac OS X and the Eclipse SWT do not get along well together. Here's my solution.
+
+# Scala, SWT, and OS X
+
+Mac OS X and [the Eclipse SWT](http://www.eclipse.org/swt/) do not get along well together. I find Swing to be sluggish and overly verbose, and so I gave SWT a try tonight. As you can see [on the SWT website](http://www.eclipse.org/swt/macosx/) and elsewhere, there's a known issue with SWT and OS X where you have to pass the `-XrunOnFirstThread` option to Java. I banged my head against the wall a bit trying to figure out how to do this with Scala, until I realized the obvious:
+
+    JAVA_OPTS="-XstartOnFirstThread" scala -cp target/classes:swt/swt.jar CalliopeSWT
+
+Another lesson learned that may not be obvious: you can't use 64-bit Java with SWT on OS X, which eliminates the Apple-released version of Java 6. (I have no idea about [SoyLatte](http://landonf.bikemonkey.org/static/soylatte/) and SWT, but if you know the deal there, please comment.)
+
+Anyway, the limitations of SWT on OS X lead me to think I either need to go back to using Linux or quit trying to use SWT. One good thing came out of the experiment: [a Scala port of Bruce Eckel's `SWTApplication`](http://gist.github.com/31845) from [_Thinking in Java_](http://mindview.net/Books/TIJ4).
