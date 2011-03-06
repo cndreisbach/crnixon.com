@@ -1,0 +1,13 @@
+*.gem
+._*
+.*.swp
+.bundle
+.DS_Store
+.rvmrc
+.sass-cache
+config/config.yml
+config/deploy.rb
+db/*.db
+pkg/*
+plugins
+public/cache

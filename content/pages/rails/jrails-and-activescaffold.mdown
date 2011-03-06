@@ -1,6 +1,8 @@
 Date: 14 May 2009
 Categories: rails
-Summary: I've searched a lot for this answer, and only come up with questions. Today, I finally figured out how to make this work.
+Summary: >
+  I've searched a lot for this answer, and only come up with questions. 
+  Today, I finally figured out how to make this work.
 
 # How to Make jRails work with ActiveScaffold
 
