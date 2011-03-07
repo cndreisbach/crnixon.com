@@ -14,20 +14,20 @@ I've split each day into morning, afternoon, and evening, with about four expect
 Then, you write down everything you have to or want to do, with an estimated number of hours it'll take per week beside it.
 
 <blockquote>
-Work: 40 (M-F afternoon)
-School: 12
-Ruby hack night: 4 (1/mon 1st Thu)
-Refresh the Triangle: 4 (1/mon 4th Thu)
-Functional Meetup: 4 (1/mon 3rd Thu)
-Church stewardship committee: 4
-Services: 2 (Sun morning)
-ERUUF-CF: 2 (2x/month Sun afternoon)
-Camp Nerdly planning: 2
-Self-organization: 2 (Sun afternoon)
-Friday night date: 4 (Fri night)
-Game with friends: 4 (Mon night)
-Spanish classes: 2 (Wed 6-8pm)
-Create Scala course: 4
+Work: 40 (M-F afternoon)<br />
+School: 12<br />
+Ruby hack night: 4 (1/mon 1st Thu)<br />
+Refresh the Triangle: 4 (1/mon 4th Thu)<br />
+Functional Meetup: 4 (1/mon 3rd Thu)<br />
+Church stewardship committee: 4<br />
+Services: 2 (Sun morning)<br />
+ERUUF-CF: 2 (2x/month Sun afternoon)<br />
+Camp Nerdly planning: 2<br />
+Self-organization: 2 (Sun afternoon)<br />
+Friday night date: 4 (Fri night)<br />
+Game with friends: 4 (Mon night)<br />
+Spanish classes: 2 (Wed 6-8pm)<br />
+Create Scala course: 4<br />
 1 night/week relaxing: 4
 </blockquote>
 
