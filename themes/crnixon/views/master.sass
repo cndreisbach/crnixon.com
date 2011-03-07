@@ -59,6 +59,8 @@ ul
 
 li
   @include adjust-font-size(1, 0, 0)
+  list-style-position: inside
+  padding-left: 10px
 
 blockquote
   margin: $base-vertical-margin 0
@@ -215,6 +217,8 @@ section.articles
         list-style: decimal
       ul li
         list-style: disc
+        list-style-position: inside
+        padding-left: 10px
 
   header[role=main] h1
     @include adjust-font-size($h1-scale, 1.5, 0.5)
