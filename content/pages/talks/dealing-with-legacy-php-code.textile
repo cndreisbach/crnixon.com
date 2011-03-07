@@ -1,0 +1,10 @@
+Date: 1 September 2007
+Categories: talks, php
+
+h1. Dealing with Legacy PHP Code
+
+I gave this presentation at OSCON 2007. I make no promises that the slides are super-useful without the talk, but who knows? Feel free to download, reuse, remix, or whatever.
+
+The executive summary: legacy PHP code has a tendency to have very particular problems. Here's three refactorings to deal with those particular problems.
+
+"See the slides on SlideShare.com":http://www.slideshare.net/crnixon/dealing-with-legacy-php-applications.

@@ -1,0 +1,11 @@
+Date: 1 November 2008
+Categories: practice, talks
+
+h1. Unearthed Arcana for Web People
+
+This is one of my favorite talks I've given. I gave it at "Refresh the Triangle":http://www.refreshthetriangle.org in October 2008, and again at "Viget Labs":http://www.viget.com in November 2008. It's a far-ranging talk about my techniques to transform myself from an ADD-plagued procrastinator to a focused person and get more enjoyment out of both work and play.
+
+* "See the slides at SlideShare":http://www.slideshare.net/crnixon/unearthed-arcana-for-web-people
+* "Links to resources from the talk":http://delicious.com/crnixon/refresh+arcana
+
+I am continuing to sharpen this talk. If you're interested in me presenting it to your organization, email me at crnixon@gmail.com.

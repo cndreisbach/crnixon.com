@@ -1,0 +1,12 @@
+Date: 1 December 2007
+Categories: talks
+
+h1. Web Application Security 2007
+
+In December 2007, I gave this talk at "Refresh the Triangle":http://www.refreshthetriangle.org/.
+
+* "Video of the talk on Vimeo.com":http://www.vimeo.com/421897
+* "Slides of the talk on Google Docs":http://docs.google.com/Presentation?id=a2wc7cxz4dk_22r385kd
+* "Collection of resources, stored on del.icio.us":http://delicious.com/crnixon/refresh+security
+* "Subversion repository with code from the talk":http://svn.clintonrnixon.net/public/security_talk_2007/
+

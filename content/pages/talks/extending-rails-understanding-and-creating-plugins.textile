@@ -1,0 +1,13 @@
+Date: 1 August 2008
+Categories: rails, talks
+
+h1. Extending Rails: Understanding and Creating Plugins
+
+I gave this tutorial talk at O'Reilly's Open Source Conference 2008. It covers a wide area, ranging from how to install Rails plugins to detailed walkthroughs of plugin code. This is a great talk to hear if you want to know more about the internals of Rails or writing extensions for any Ruby library.
+
+* "Extending Rails, Part I":http://vimeo.com/1412708 video
+* "Extending Rails, Part II":http://vimeo.com/1413035 video
+* "See the slides at Slideshare":http://www.slideshare.net/crnixon/extending-rails-understanding-and-creating-plugins?src=embed
+
+There are many plugins and resources mentioned in the talk and I've put "all these resources on their own page":rails-plugins.html.
+
