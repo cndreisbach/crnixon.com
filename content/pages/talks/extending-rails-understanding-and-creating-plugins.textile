@@ -1,9 +1,12 @@
 Date: 1 August 2008
 Categories: rails, talks
+Summary: I gave this tutorial talk at O'Reilly's Open Source Conference 2008. It covers a wide area, ranging from how to install Rails plugins to detailed walkthroughs of plugin code. This is a great talk to hear if you want to know more about the internals of Rails or writing extensions for any Ruby library.
 
 h1. Extending Rails: Understanding and Creating Plugins
 
 I gave this tutorial talk at O'Reilly's Open Source Conference 2008. It covers a wide area, ranging from how to install Rails plugins to detailed walkthroughs of plugin code. This is a great talk to hear if you want to know more about the internals of Rails or writing extensions for any Ruby library.
+
+The slides are embedded below, but for the full experience, these two videos have the slides, audio, and some live code examples.
 
 * "Extending Rails, Part I":http://vimeo.com/1412708 video
 * "Extending Rails, Part II":http://vimeo.com/1413035 video
@@ -11,3 +14,4 @@ I gave this tutorial talk at O'Reilly's Open Source Conference 2008. It covers a
 
 There are many plugins and resources mentioned in the talk and I've put "all these resources on their own page":rails-plugins.html.
 
+<div style="width:510px" id="__ss_519019"> <object id="__sse519019" width="510" height="426"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=tutorial-1216411201453748-8&stripped_title=extending-rails-understanding-and-creating-plugins&userName=crnixon" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed name="__sse519019" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=tutorial-1216411201453748-8&stripped_title=extending-rails-understanding-and-creating-plugins&userName=crnixon" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed> </object> </div>

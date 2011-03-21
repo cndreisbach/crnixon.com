@@ -1,9 +1,18 @@
 Date: 1 November 2008
 Categories: practice, talks
+Summary: This is one of my favorite talks I've given. I gave it at "Refresh the Triangle":http://www.refreshthetriangle.org in October 2008, and again at "Viget Labs":http://www.viget.com in November 2008. It's a far-ranging talk about my techniques to transform myself from an ADD-plagued procrastinator to a focused person and get more enjoyment out of both work and play.
 
 h1. Unearthed Arcana for Web People
 
 This is one of my favorite talks I've given. I gave it at "Refresh the Triangle":http://www.refreshthetriangle.org in October 2008, and again at "Viget Labs":http://www.viget.com in November 2008. It's a far-ranging talk about my techniques to transform myself from an ADD-plagued procrastinator to a focused person and get more enjoyment out of both work and play.
+
+<div style="width:510px" id="__ss_2792856"> 
+<object id="__sse2792856" width="510" height="426"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=unearthedarcana-091229082948-phpapp01&stripped_title=unearthed-arcana-for-web-people&userName=crnixon" /> 
+<param name="allowFullScreen" value="true"/> 
+<param name="allowScriptAccess" value="always"/>
+<embed name="__sse2792856" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=unearthedarcana-091229082948-phpapp01&stripped_title=unearthed-arcana-for-web-people&userName=crnixon" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed> 
+</object> 
+</div>
 
 * "See the slides at SlideShare":http://www.slideshare.net/crnixon/unearthed-arcana-for-web-people
 * "Links to resources from the talk":http://delicious.com/crnixon/refresh+arcana
