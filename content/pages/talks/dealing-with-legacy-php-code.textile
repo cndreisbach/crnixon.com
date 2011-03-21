@@ -1,10 +1,13 @@
 Date: 1 September 2007
 Categories: talks, php
+Summary: Legacy PHP code has a tendency to have very particular problems. Here's three refactorings to deal with those particular problems.
 
-h1. Dealing with Legacy PHP Code
+h1. Dealing with Legacy PHP Applications
 
 I gave this presentation at OSCON 2007. I make no promises that the slides are super-useful without the talk, but who knows? Feel free to download, reuse, remix, or whatever.
 
 The executive summary: legacy PHP code has a tendency to have very particular problems. Here's three refactorings to deal with those particular problems.
+
+<div style="width:510px" id="__ss_83805"> <object id="__sse83805" width="510" height="426"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=dealing-with-legacy-php-applications3929&stripped_title=dealing-with-legacy-php-applications&userName=crnixon" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed name="__sse83805" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=dealing-with-legacy-php-applications3929&stripped_title=dealing-with-legacy-php-applications&userName=crnixon" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed> </object> </div>
 
 "See the slides on SlideShare.com":http://www.slideshare.net/crnixon/dealing-with-legacy-php-applications.

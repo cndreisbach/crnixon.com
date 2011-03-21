@@ -1,0 +1,12 @@
+Date: 28 Jan 2010
+Categories: html5, talks
+Summary: I gave this talk at Refresh the Triangle in January 2010. I was just beginning to experiment with HTML5, and found preparing this talk to be a great learning experience.
+
+h1. HTML5 Now!
+
+I gave this talk at "Refresh the Triangle":http://www.refreshthetriangle.org/ in January 2010. I was just beginning to experiment with HTML5, and found preparing this talk to be a great learning experience.
+
+<div style="width:510px" id="__ss_3021545"> <object id="__sse3021545" width="510" height="426"> <param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=html5now-100129054700-phpapp01&stripped_title=html5-now&userName=crnixon" /> <param name="allowFullScreen" value="true"/> <param name="allowScriptAccess" value="always"/> <embed name="__sse3021545" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=html5now-100129054700-phpapp01&stripped_title=html5-now&userName=crnixon" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="510" height="426"></embed> </object> </div>
+
+* "See the slides on Slideshare":http://www.slideshare.net/crnixon/html5-now
+* "See the collection of resources for the talk on Pinboard":http://pinboard.in/u:crnixon/t:html5/
