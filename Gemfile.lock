@@ -2,6 +2,8 @@ GEM
   remote: http://rubygems.org/
   specs:
     RedCloth (4.2.7)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     haml (3.0.25)
     maruku (0.6.0)
       syntax (>= 1.0.0)
@@ -24,4 +26,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass (~> 0.10)
   nesta (~> 0.9)

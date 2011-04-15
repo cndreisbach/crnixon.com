@@ -23,6 +23,17 @@ module Nesta
     helpers do
       # add helpers
     end
+    
+    configure do
+      Compass.configuration do |config|
+        config.project_path = File.dirname(__FILE__)
+        config.sass_dir = 'views'
+      end
+
+      set :haml, { :format => :html5 }
+      set :sass, Compass.sass_engine_options
+      set :scss, Compass.sass_engine_options
+    end
 
     get '/robots.txt' do
       content_type 'text/plain', :charset => 'utf-8'
@@ -34,7 +45,7 @@ module Nesta
 
     get '/css/:sheet.css' do
       content_type 'text/css', :charset => 'utf-8'
-      cache scss(params[:sheet].to_sym)
+      cache scss(:"css/#{params[:sheet].to_sym}")
     end
 
     get %r{/attachments/([\w/.-]+)} do
