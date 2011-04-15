@@ -20,6 +20,8 @@ module Nesta
   end
 
   class App < Sinatra::Base
+    register Padrino::Helpers
+    
     helpers do
       def partial(template, *args)
         template_array = template.to_s.split('/')
@@ -55,9 +57,9 @@ module Nesta
       EOF
     end
 
-    get '/css/:sheet.css' do
+    get '/stylesheets/:sheet.css' do
       content_type 'text/css', :charset => 'utf-8'
-      cache scss(:"css/#{params[:sheet].to_sym}")
+      cache scss(:"stylesheets/#{params[:sheet].to_sym}")
     end
 
     get %r{/attachments/([\w/.-]+)} do

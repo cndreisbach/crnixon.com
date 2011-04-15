@@ -1,5 +1,3 @@
-%nav.breadcrumb
-  - display_breadcrumbs
 #content
   %article(role="main")
     ~ @page.to_html(self)
@@ -12,4 +10,3 @@
         = partial :summaries, :locals => { :pages => @page.articles, :heading => :h3 }
     = partial :page_meta, :locals => { :page => @page }
   = partial :comments
-= partial :sidebar

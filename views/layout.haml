@@ -1,23 +1,18 @@
 !!! 5
-%html(lang="en")
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+%html.no-js(lang="en")
+  <!--<![endif]-->
   %head
-    %meta(charset="utf-8")
-    - if @description
-      %meta(name="description" content=@description)
-    - if @keywords
-      %meta(name="keywords" content=@keywords)
-    %title= @title
-    <!--[if ! lte IE 6]><!-->
-    %link(href="/css/master.css" media="screen" rel="stylesheet")
-    <!--<![endif]-->
-    /[if lte IE 6]
-      %link(rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1.css" media="screen, projection")
-    /[if lt IE 9]
-      %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
-    %link(href="/articles.xml" rel="alternate" type="application/atom+xml")
-    = partial :analytics
-  %body
+    = partial :head
+  %body(lang="en")
     #container
       = partial :header
-      = yield
+      = partial :sidebar
+      #main
+        = yield
       = partial :footer
+      = partial :analytics
