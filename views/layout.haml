@@ -15,9 +15,9 @@
     /[if lt IE 9]
       %script(src="//html5shim.googlecode.com/svn/trunk/html5.js")
     %link(href="/articles.xml" rel="alternate" type="application/atom+xml")
-    = haml :analytics, :layout => false
+    = partial :analytics
   %body
     #container
-      = haml :header, :layout => false
+      = partial :header
       = yield
-      = haml :footer, :layout => false
+      = partial :footer

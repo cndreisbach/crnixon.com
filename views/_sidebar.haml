@@ -2,4 +2,4 @@
   - if !@menu_items.empty?
     %nav.menu
       - display_menu(@menu_items, :class => "menu")
-  = haml :feed, :layout => false
+  = partial :feed

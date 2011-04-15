@@ -4,16 +4,11 @@
 #content
   %article(role="main")
     ~ @page.to_html(self)
-
     %section.pages
-      = haml :summaries, :layout => false, :locals => { :pages => @page.pages }
-
+      = partial :summaries, :locals => { :pages => @page.pages }
     - unless @page.articles.empty?
       %section.articles
-        = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
-
-    = haml :page_meta, :layout => false, :locals => { :page => @page }
-
-  = haml :comments, :layout => false
-
-= haml :sidebar, :layout => false
+        = partial :summaries, :locals => { :pages => @page.articles, :heading => :h3 }
+    = partial :page_meta, :locals => { :page => @page }
+  = partial :comments
+= partial :sidebar
