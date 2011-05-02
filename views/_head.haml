@@ -16,6 +16,7 @@
 -# %link{ :href => "/favicon.ico", :rel => "shortcut icon" }/
 -# %link{ :href => "/apple-touch-icon.png", :rel => "apple-touch-icon" }/
 
-= stylesheet_link_tag "style"
+= stylesheet_link_tag "screen"
+= stylesheet_link_tag "print", :media => "print"
 = javascript_include_tag "modernizr.min"
 %link(href="/articles.xml" rel="alternate" type="application/atom+xml")

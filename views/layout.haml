@@ -10,8 +10,9 @@
     = partial :head
   %body(lang="en")
     #container
-      = partial :header
-      = partial :sidebar
+      #sidebar
+        = partial :header
+        = partial :nav
       #main
         = yield
       = partial :footer

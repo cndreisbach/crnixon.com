@@ -1,0 +1,35 @@
+// Imports -------------------------------------------------------------------
+
+@import "compass/reset";
+@import "base";
+@import "blueprint/typography";
+
+/* Layout ------------------------------------------------------------------*/
+
+#container {
+  @include blueprint-typography(true);
+  @include container;
+  @include susy-grid-background;
+  margin-top: 3em;
+}
+
+// show-grid loads a 64+16x24 grid image by default
+// For other grid settings, run `compass grid-img 30+10x20`
+// Where 30 is the column width, 10 is the gutter width,
+// and 20 is the (optional) line-height.
+
+/* Styles -------------------------------------------------------------- */
+
+#sidebar {
+  @include columns(3);
+  @include alpha;
+}
+
+#main {
+  @include columns(9);
+  @include omega;
+}
+
+footer {
+  @include full;
+}

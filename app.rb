@@ -1,24 +1,4 @@
 module Nesta
-  class FileModel
-    def parse_file
-      first_para, remaining = File.open(@filename).read.split(/\r?\n\r?\n/, 2)
-      @metadata = {}
-      if paragraph_is_metadata(first_para)
-        @markup = remaining
-        data = YAML::load(first_para)
-        if data.is_a?(Hash)
-          data.each do |key, value|
-            @metadata[key.downcase] = value
-          end
-        end
-      else
-        @markup = [first_para, remaining].join("\n\n")
-      end
-    rescue Errno::ENOENT  # file not found
-      raise Sinatra::NotFound
-    end
-  end
-
   class App < Sinatra::Base
     register Padrino::Helpers
     
