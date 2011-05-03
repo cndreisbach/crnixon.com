@@ -1,6 +1,6 @@
 # Contact Me
 
-If it sounds like I could help your organization, I'd love to talk to you.
+If it sounds like I could help your organization, I'd love to talk with you.
 
 <p class="vcard">
 You can email me at <a class="email" href="mailto:crnixon@crnixon.com">crnixon@crnixon.com</a> 
