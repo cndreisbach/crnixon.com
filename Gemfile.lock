@@ -1,11 +1,12 @@
 GIT
   remote: http://github.com/crnixon/nesta.git
-  revision: f5575747e2d00e06ae4b66b1358b44c4d2415696
+  revision: 8044d9bc1c47c2e9a79af6e3c5dce47c2d1b8009
   specs:
     nesta (0.9.5)
       RedCloth (~> 4.2)
       haml (~> 3.1)
       maruku (>= 0.6.0)
+      psych (>= 1.1.0)
       sass (~> 3.1)
       shotgun (>= 0.9)
       sinatra (~> 1.2)
@@ -40,6 +41,7 @@ GEM
     padrino-helpers (0.9.26)
       i18n (>= 0.4.1)
       padrino-core (= 0.9.26)
+    psych (1.1.0)
     rack (1.2.2)
     redcarpet (1.9.0)
     sass (3.1.1)
