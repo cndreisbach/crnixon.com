@@ -1,0 +1,7 @@
+# Contact Me
+
+If it sounds like I could help your organization, I'd love to talk to you.
+
+<p class="vcard">
+You can email me at <a class="email" href="mailto:crnixon@crnixon.com">crnixon@crnixon.com</a> 
+or give me a ring at <span class="tel">+1 919 360 9150</span>.
