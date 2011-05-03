@@ -1,15 +1,15 @@
 // Imports -------------------------------------------------------------------
 
-@import "compass/reset";
+// @import "compass/reset";
 @import "base";
-@import "blueprint/typography";
+// @import "blueprint/typography";
 
 /* Layout ------------------------------------------------------------------*/
 
 #container {
-  @include blueprint-typography(true);
+  // @include blueprint-typography(true);
   @include container;
-  @include susy-grid-background;
+  // @include susy-grid-background;
   margin-top: 3em;
 }
 

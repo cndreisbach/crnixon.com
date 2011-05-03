@@ -1,6 +1,6 @@
 GIT
   remote: http://github.com/crnixon/nesta.git
-  revision: dcb4ed30bb27ee12f4f1fab20950a2738631c091
+  revision: f5575747e2d00e06ae4b66b1358b44c4d2415696
   specs:
     nesta (0.9.5)
       RedCloth (~> 4.2)
@@ -47,7 +47,7 @@ GEM
       rack (>= 1.0)
     sinatra (1.2.6)
       rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
+      tilt (< 2.0, >= 1.2.2)
     syntax (1.0.0)
     thor (0.14.6)
     tilt (1.3)
