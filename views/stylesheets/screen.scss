@@ -29,6 +29,13 @@
 
 /* Styles -------------------------------------------------------------- */
 
+$link-color: #216278;
+$visited-link-color: #94002D;
+$highlight-color: #FFE673;
+// blues: 06799F	216278	024E68	3AAACF	61B4CF
+// yellows: FFD200	BFA630	A68800	FFDD40	FFE673
+// magentas: E40045	AB2B52	94002D	F13C73	F16D95
+
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
   line-height: 1.25;
@@ -36,6 +43,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+a {
+  color: $link-color;
+  &:visited {
+    color: $visited-link-color;
+  }
 }
 
 #sidebar {
