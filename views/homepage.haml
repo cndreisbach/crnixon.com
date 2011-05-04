@@ -8,10 +8,11 @@
   <!--<![endif]-->
   %head
     = partial :head
-  %body.standard(lang="en")
+  %body.homepage(lang="en")
     #container
       #header
-        = partial :header
+        %h1 
+          %a(href="/") Clinton R. Nixon
         = partial :nav
       #main
         = yield
