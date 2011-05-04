@@ -1,4 +1,16 @@
 module Nesta
+  class Page < FileModel
+    def title
+      if metadata('title')
+        metadata('title')
+      elsif heading
+        "#{heading} - #{Nesta::Config.title}"
+      elsif abspath == '/'
+        Nesta::Config.title
+      end
+    end
+  end
+
   class App < Sinatra::Base
     register Padrino::Helpers
     
