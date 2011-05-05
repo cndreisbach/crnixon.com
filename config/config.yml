@@ -63,3 +63,4 @@ google_analytics_code: "UA-???????-?"
 
 production:
   google_analytics_code: "UA-6648773-4"
+  cache: true

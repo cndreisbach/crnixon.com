@@ -13,6 +13,18 @@ module Nesta
 
   class App < Sinatra::Base
     register Padrino::Helpers
+
+    def cache(content, opts = {})
+      # Cache for a month
+      cache_for = opts[:for] || 2592000 
+
+      if options.cache_enabled && !content.nil?
+        response.headers['Cache-Control'] = "public, max-age=#{cache_for}"
+        log("Cached Page: [#{request.path_info}]",:info) 
+      end
+
+      content
+    end
     
     helpers do
       def partial(template, *args)
