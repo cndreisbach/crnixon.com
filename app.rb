@@ -1,16 +1,13 @@
-module Nesta
-  class Page < FileModel
-    def title
-      if metadata('title')
-        metadata('title')
-      elsif heading
-        "#{heading} - #{Nesta::Config.title}"
-      elsif abspath == '/'
-        Nesta::Config.title
-      end
-    end
-  end
+def lib(path)
+  Pathname.new(File.dirname(__FILE__)) + 'lib' + path
+end
 
+require lib('nesta/config')
+require lib('nesta/markdown')
+require lib('nesta/models')
+require lib('haml/filters/markdown')
+
+module Nesta
   class App < Sinatra::Base
     register Padrino::Helpers
 

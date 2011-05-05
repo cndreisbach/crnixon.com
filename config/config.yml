@@ -54,6 +54,12 @@ content: content
 #
 google_analytics_code: "UA-???????-?"
 
+markdown_flags:
+  - smart
+  - fenced_code
+  - no_intraemphasis
+  - tables
+
 # Overriding "cache" and "content" in production is recommended if you're
 # deploying Nesta to your own server (but see the deployment documentation
 # on the Nesta site). Setting google_analytics_code in production is
