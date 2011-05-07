@@ -22,6 +22,10 @@ module Nesta
 
       content
     end
+
+    def production?
+      environment == :production
+    end
     
     helpers do
       def partial(template, *args)
@@ -43,9 +47,10 @@ module Nesta
       Compass.configuration do |config|
         config.project_path = File.dirname(__FILE__)
         config.sass_dir = 'views'
+        config.output_style = production? ? :compressed : :expanded
       end
 
-      set :haml, { :format => :html5 }
+      set :haml, { :format => :html5, :ugly => production? }
       set :sass, Compass.sass_engine_options
       set :scss, Compass.sass_engine_options
     end

@@ -53,7 +53,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.10)
+  compass (~> 0.11)
   compass-susy-plugin (~> 0.9)
   nesta (>= 0.9.5)
   padrino-helpers (~> 0.9.22)
