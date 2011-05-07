@@ -6,6 +6,11 @@ Summary: >
 
 # How to Make jRails work with ActiveScaffold
 
+<div class="deprecated">
+<h2>Deprecation warning</h2>
+<p>This post was written in 2009 for Rails 2.3. It is most likely not applicable to your situation.</p>
+</div>
+
 I've searched a lot for this answer, and only [come up with questions](http://markmail.org/message/rsgoijgaasvd4abv). Today, I finally figured out how to make this work.
 
 First, I need to make jQuery not conflict with Prototype. I hate using both, but ActiveScaffold demands it, as it's got some Prototype-specific JavaScript. In my layout, I have this:

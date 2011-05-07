@@ -6,7 +6,7 @@
 @import "prettify";
 
 
-#container {
+body {
   @include accentize($orange);
 }
 
@@ -154,3 +154,7 @@ em {
   }
 }
 
+.deprecated {
+  @include accentize($red);
+  margin: 0 1em 0 2em;
+}

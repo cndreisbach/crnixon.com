@@ -9,6 +9,13 @@ I recently read Neal Ford's [The Productive Programmer](http://productiveprogram
 
 Muness Alrubaie wrote a good post on how to [automatically create aliases to `cd` to your projects](http://muness.blogspot.com/2008/06/lazy-bash-cd-aliaes.html). Being able to jump to my weblog by typing `crnixon.org` or to my [spect project](http://github.com/vigetlabs/spect/tree/master) by typing `spect` has been super useful.
 
+<div class="deprecated">
+<h3>Deprecation warning</h3>
+<p>
+These days, I use <a href="http://www.caliban.org/bash/#bashtips">CDPATH</a> to achieve the same effect.
+</p>
+</div>
+
 ### Reading gem source code
 
 I read the source code to gems I'm working with for documentation all the time. I used to have an alias, so I could type `egem capis` and it would open the capistrano gem. Unfortunately, it just did an `ls | head -1`, so it'd grab the first gem directory that matched the argument.
