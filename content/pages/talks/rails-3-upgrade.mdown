@@ -1,0 +1,13 @@
+Date: 16 May 2011
+Categories: rails, talks
+Summary: |
+  I gave this tutorial at RailsConf 2011. The short version: great practices make upgrading easy.
+
+# Migrating Legacy Apps to Rails 3
+
+I gave this tutorial at RailsConf 2011. The slides are quite detailed because I realized that there was no way anyone was going to actually upgrade their app during my talk and that they might want some real notes to be able to reference during their upgrade.
+
+* [See the collection of resources for the talk on Pinboard](http://pinboard.in/u:crnixon/t:rails3upgrade/)
+
+<div style="width:510px" id="__ss_7983843"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/crnixon/rails-3-7983843" title="Migrating Legacy Rails Apps to Rails 3">Migrating Legacy Rails Apps to Rails 3</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/7983843" width="510" height="426" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/crnixon">Clinton R. Nixon</a> </div> </div>
+
