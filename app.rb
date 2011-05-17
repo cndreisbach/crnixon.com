@@ -13,11 +13,11 @@ module Nesta
 
     def cache(content, opts = {})
       # Cache for a month
-      cache_for = opts[:for] || 2592000 
+      cache_for = opts[:for] || 2592000
 
       if options.cache_enabled && !content.nil?
         response.headers['Cache-Control'] = "public, max-age=#{cache_for}"
-        log("Cached Page: [#{request.path_info}]",:info) 
+        log("Cached Page: [#{request.path_info}]",:info)
       end
 
       content
@@ -26,7 +26,7 @@ module Nesta
     def production?
       environment == :production
     end
-    
+
     helpers do
       def partial(template, *args)
         template_array = template.to_s.split('/')
@@ -42,7 +42,7 @@ module Nesta
         end
       end
     end
-    
+
     configure do
       Compass.configuration do |config|
         config.project_path = File.dirname(__FILE__)
@@ -74,7 +74,7 @@ module Nesta
     end
 
     get '/articles.xml' do
-      content_type :xml, :charset => 'utf-8'
+      content_type :"atom+xml", :charset => 'utf-8'
       set_from_config(:title, :subtitle, :author)
       @articles = Page.find_articles.select { |a| a.date }[0..9]
       cache haml(:atom, :format => :xhtml, :layout => false)
