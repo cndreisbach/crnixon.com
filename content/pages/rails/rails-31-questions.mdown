@@ -8,3 +8,7 @@ Summary: >
 **Q: Rails 3.1 includes CoffeeScript by default. The [CoffeeScript site](http://jashkenas.github.com/coffee-script/) says you need node.js for CoffeeScript. Do you need node.js to run Rails 3.1?**
 
 Nope. Rails 3.1 requires a coffee-script gem, which requires [exec-js](https://github.com/sstephenson/execjs), which _does_ require some JavaScript runtime. If you have a Mac, one's included by default. I'm not sure what happens in deployment yet.
+
+**Q: The new asset pipeline will need to cache its generated JS and CSS in production. Where does it cache these? Will it work on [Heroku](http://heroku.com)?**
+
+It looks like it will work great on Heroku. I found it in `tmp/cache/`.
