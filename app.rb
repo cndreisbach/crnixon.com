@@ -53,6 +53,8 @@ module Nesta
       set :haml, { :format => :html5, :ugly => production? }
       set :sass, Compass.sass_engine_options
       set :scss, Compass.sass_engine_options
+
+      mime_type :atom, 'application/atom+xml'
     end
 
     get '/robots.txt' do
@@ -74,7 +76,7 @@ module Nesta
     end
 
     get '/articles.xml' do
-      content_type :"atom+xml", :charset => 'utf-8'
+      content_type :atom, :charset => 'utf-8'
       set_from_config(:title, :subtitle, :author)
       @articles = Page.find_articles.select { |a| a.date }[0..9]
       cache haml(:atom, :format => :xhtml, :layout => false)
