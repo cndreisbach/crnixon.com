@@ -76,6 +76,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
 pre, code {
   font-family: "Consolas", "Monaco", monospace;
 }

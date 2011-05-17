@@ -1,0 +1,10 @@
+Date: 17 May 2011
+Categories: rails
+Summary: >
+  Rails 3.1 is right around the corner, and some of the new features raised questions for me. Here's my ongoing set of questions and answers.
+
+# Rails 3.1 Q&A
+
+**Q: Rails 3.1 includes CoffeeScript by default. The [CoffeeScript site](http://jashkenas.github.com/coffee-script/) says you need node.js for CoffeeScript. Do you need node.js to run Rails 3.1?**
+
+Nope. Rails 3.1 requires a coffee-script gem, which requires [exec-js](https://github.com/sstephenson/execjs), which _does_ require some JavaScript runtime. If you have a Mac, one's included by default. I'm not sure what happens in deployment yet.
