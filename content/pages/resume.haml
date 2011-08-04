@@ -1,3 +1,5 @@
+Layout: resume
+
 #resume.hresume
   #contact.contact.vcard
     #name-and-address
@@ -6,12 +8,12 @@
         %span.additional-name R.
         %span.family-name Nixon
       .adr
-        %span.street-address 4400 Lazyriver Dr
+        %span.street-address 831 Burch Ave
         %br/
         = succeed "," do
           %span.locality Durham
         %span.region NC
-        %span.postal-code 27712
+        %span.postal-code 27701
         %span.country-name USA
     #contact-methods
       %ul
@@ -25,11 +27,11 @@
         %li
           Email:
           %a.email{:href => "mailto:crnixon@gmail.com"}
-            crnixon@gmail.com
+            crnixon@crnixon.com
         %li
           Web:
-          %a.url{:href => "http://crnixon.org"}
-            http://crnixon.org
+          %a.url{:href => "http://crnixon.com"}
+            http://crnixon.com
         %li
           %a.url{:href => "http://github.com/crnixon"}
             GitHub
@@ -76,11 +78,41 @@
     .vcalendar
       .experience.vevent.vcard
         .date_duration
-          %abbr.dtstart{:title => "2007-07-01"}
-            July 2007
+          %abbr.dtstart{:title => "2007-04-01"}
+            April 2011
           \-
           %abbr.dtend
             Present
+        .htitle
+          %object.include{:data => "#name"}
+          %span.title
+            Chief Developer
+          %br/
+          = succeed "," do
+            %span.org CRNixon Development
+          %span.location
+            Durham, NC
+        .description
+          :markdown
+            Self-employed as a contractor, working on Ruby development projects.
+            Highlights include:
+
+            * Created a CMS with in-page editing capability using 
+            [Backbone.js](http://documentcloud.github.com/backbone/) and Rails. This
+            project was unique in that it was primarily JavaScript, and I learned a lot
+            about building *rich client-side applications*.
+            * Managed development for an 
+            [independent news media non-profit](http://democracynow.org). Migrated their
+            site from Rails 1 to Rails 2.3.11, and re-architected their deployment strategy
+            to allow for *zero-downtime production deployments*, even during their highest
+            traffic periods.
+      .experience.vevent.vcard
+        .date_duration
+          %abbr.dtstart{:title => "2007-07-01"}
+            July 2007
+          \-
+          %abbr.dtend{:title => "2011-03-25"}
+            March 2011
         .htitle
           %object.include{:data => "#name"}
           %span.title
@@ -254,36 +286,56 @@
       Talks
     %ol.talks.publications
       %li
-        %cite
+        %cite>
+          %a(href="http://www.oscon.com/oscon2011/public/schedule/detail/19008")> Upgrading and Improving Legacy Rails Applications
+        , O'Reilly Open Source Conference 2011, Portland, OR
+      %li
+        %cite>
+          %a(href="http://www.oscon.com/oscon2011/public/schedule/detail/19305")> An Open Source Machine for the Pampered Developer
+        , O'Reilly Open Source Conference 2011, Portland, OR
+      %li
+        %cite>
+          %a(href="http://speakerrate.com/talks/7503-upgrading-legacy-rails-applications-to-rails-3")> Upgrading Legacy Rails Applications to Rails 3
+        , RailsConf 2011, Baltimore, MD
+      %li
+        %cite>
           %a{:href => "http://en.oreilly.com/rails2010/public/schedule/detail/14297"}> Migrating Plugins to Rails 3
-          , RailsConf 2010, Baltimore, MD
+        , RailsConf 2010, Baltimore, MD
       %li
         %cite>
-          %a{:href => "http://speakerrate.com/talks/1910-advanced-internationalization-in-rails"} Advanced Internationalization in Rails
-        , Conferencia Rails 2008, Madrid, Spain
+          %a(href="http://speakerrate.com/talks/2180-having-fun-with-the-play-framework")> Having Fun with the Play Framework
+        , Developer Day Durham 2010, Durham, NC
       %li
         %cite>
-          %a{:href => "http://speakerrate.com/talks/1757-the-joy-of-ruby"} The Joy of Ruby
+          %a(href="http://speakerrate.com/talks/2158-mvc-javascript-and-client-side-storage")> MVC JavaScript and Client-Side Storage
+        , North Carolina Javascript, Durham, NC
+      %li
+        %cite>
+          %a{:href => "http://speakerrate.com/talks/1910-advanced-internationalization-in-rails"}> Advanced Internationalization in Rails
+        , Conferencia Rails 2009, Madrid, Spain
+      %li
+        %cite>
+          %a{:href => "http://speakerrate.com/talks/1757-the-joy-of-ruby"}> The Joy of Ruby
         , 756Studio, Hampton Roads, VA
       %li
         %cite>
-          %a{:href => "http://crnixon.org/talks/scala"} Scala: A Modern Language
+          %a{:href => "http://crnixon.org/talks/scala"}> Scala: A Modern Language
         , Developer Day Durham 2009, Durham, NC
       %li
         %cite>
-          %a{:href => "http://www.slideshare.net/crnixon/unearthed-arcana-for-web-people"} Unearthed Arcana for Web People
+          %a{:href => "http://www.slideshare.net/crnixon/unearthed-arcana-for-web-people"}> Unearthed Arcana for Web People
         , Refresh the Triangle, Durham, NC
       %li
         %cite>
-          %a{:href => "http://crnixon.org/talks/rails-plugins.html"} Extending Rails: Understanding and Building Plugins
+          %a{:href => "http://crnixon.org/talks/rails-plugins.html"}> Extending Rails: Understanding and Building Plugins
         , O'Reilly Open Source Conference 2008, Portland, OR
       %li
         %cite>
-          %a{:href => "http://www.vimeo.com/421897"} Web Application Security 2006
+          %a{:href => "http://www.vimeo.com/421897"}> Fortified Web Projects: Fundamentals for Security
         , Refresh the Triangle, Durham, NC
       %li
         %cite>
-          %a{:href => "http://conferences.oreillynet.com/cs/os2007/view/e_sess/12772"} Untangling the Web: Dealing with Legacy PHP Code
+          %a{:href => "http://conferences.oreillynet.com/cs/os2007/view/e_sess/12772"}> Untangling the Web: Dealing with Legacy PHP Code
         , O'Reilly Open Source Conference 2007, Portland, OR
   #facts
     %h2
@@ -303,6 +355,11 @@
           book to be applicable to
           %span.skills object-oriented development
           in any language.
+      %li
+        %p
+          I am a 
+          = succeed "." do
+            %a(href="https://github.com/crnixon/dotfiles") <span class="skills">Vim</span> wizard
       %li
         %p
           I play the

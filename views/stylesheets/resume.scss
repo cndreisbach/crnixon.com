@@ -1,0 +1,405 @@
+/* line 4, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 6, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+html {
+  font-size: 100.01%; }
+
+/* line 16, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, abbr, acronym, address, code, del, dfn, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 18, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""; }
+
+/* line 45, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+blockquote {
+  &:before, &:after {
+    content: ""; } }
+
+q {
+  &:before, &:after {
+    content: ""; } }
+
+/* line 20, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 22, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 24, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/reset/_utilities.scss */
+
+a img {
+  border: none; }
+
+/* line 1, ../../stylesheets/modules/_html5_reset.sass */
+
+article, aside, dialog, figure, footer, header, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  display: block; }
+
+/* line 5, ../../stylesheets/modules/_html5_reset.sass */
+
+object.include {
+  display: none; }
+
+/* line 8, ../../stylesheets/modules/_colors.sass */
+
+body {
+  color: black; }
+
+/* line 11, ../../stylesheets/modules/_colors.sass */
+
+a {
+  color: #1921b1;
+  &:visited {
+    color: #b90091; }
+  &:hover {
+    color: #1921b1;
+    background-color: #ddfde6; } }
+
+/* line 13, ../../stylesheets/modules/_colors.sass */
+
+/* line 15, ../../stylesheets/modules/_colors.sass */
+
+/* line 20, ../../stylesheets/modules/_colors.sass */
+
+h1 a {
+  color: black;
+  &:visited {
+    color: black; } }
+
+/* line 24, ../../stylesheets/modules/_colors.sass */
+
+h2 a:visited, a.comment_link:visited, nav a:visited {
+  color: #1921b1; }
+
+/* line 27, ../../stylesheets/modules/_colors.sass */
+
+#main {
+  border-bottom-color: #00bf32; }
+
+/* line 11, ../../stylesheets/resume.sass */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  .clear {
+    clear: both; }
+  .nowrap {
+    white-space: nowrap; }
+  .clearfix {
+    overflow: hidden;
+    display: inline-block;
+    display: block; }
+  .small {
+    font-size: 0.8em;
+    margin-bottom: 1.875em;
+    line-height: 1.875em; }
+  .large {
+    font-size: 1.2em;
+    line-height: 2.5em;
+    margin-bottom: 1.25em; }
+  .first {
+    margin-left: 0;
+    padding-left: 0; }
+  .last {
+    margin-right: 0;
+    padding-right: 0; }
+  .top {
+    margin-top: 0;
+    padding-top: 0; }
+  .bottom {
+    margin-bottom: 0;
+    padding-bottom: 0; }
+  .error {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #dddddd;
+    background: #fbe3e4;
+    color: #8a1f11;
+    border-color: #fbc2c4;
+    a {
+      color: #8a1f11; } }
+  .notice {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #dddddd;
+    background: #fff6bf;
+    color: #514721;
+    border-color: #ffd324;
+    a {
+      color: #514721; } }
+  .success {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: 2px solid #dddddd;
+    background: #e6efc2;
+    color: #264409;
+    border-color: #c6d880;
+    a {
+      color: #264409; } }
+  .hide {
+    display: none; }
+  .highlight {
+    background: #ddfde6; }
+  .added {
+    background: #006600;
+    color: white; }
+  .removed {
+    background: #990000;
+    color: white; } }
+
+/* line 9, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 12, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 16, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 8, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+
+/* line 18, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 22, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 26, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 29, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 32, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 35, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_utilities.scss */
+
+/* line 4, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 29, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 6, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 37, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 8, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 45, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 10, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 12, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 14, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 16, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
+
+/* line 18, ../../stylesheets/resume.sass */
+
+a {
+  color: #1921b1;
+  &:visited {
+    color: #b90091; } }
+
+/* line 21, ../../stylesheets/resume.sass */
+
+/* line 24, ../../stylesheets/resume.sass */
+
+h1, h2, h3 {
+  font-weight: bold; }
+
+/* line 27, ../../stylesheets/resume.sass */
+
+h2, h3 {
+  margin-top: 1em;
+  padding-bottom: 0.5em; }
+
+/* line 31, ../../stylesheets/resume.sass */
+
+h1 {
+  font-size: 2em; }
+
+/* line 34, ../../stylesheets/resume.sass */
+
+h2 {
+  font-size: 1.5em; }
+
+/* line 37, ../../stylesheets/resume.sass */
+
+h3 {
+  font-size: 1.25em; }
+
+/* line 40, ../../stylesheets/resume.sass */
+
+p, ol li {
+  padding-bottom: 1em; }
+
+/* line 44, ../../stylesheets/resume.sass */
+
+ul li {
+  list-style-type: disc;
+  margin-left: 1.25em; }
+
+/* line 48, ../../stylesheets/resume.sass */
+
+em {
+  background-color: #ddfde6; }
+
+/* line 51, ../../stylesheets/resume.sass */
+
+#resume {
+  width: 790px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  padding-top: 3em;
+  padding-bottom: 6em;
+  display: block; }
+
+/* line 8, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+
+/* line 56, ../../stylesheets/resume.sass */
+
+#contact {
+  width: 790px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid #00bf32;
+  display: block;
+  #name-and-address {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 390px; } }
+
+/* line 8, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+
+/* line 58, ../../stylesheets/resume.sass */
+
+/* line 139, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+
+* html #contact #name-and-address {
+  overflow-x: hidden; }
+
+/* line 60, ../../stylesheets/resume.sass */
+
+#contact #contact-methods {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 390px;
+  text-align: right; }
+
+/* line 139, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+
+* html #contact #contact-methods {
+  overflow-x: hidden; }
+
+/* line 64, ../../stylesheets/resume.sass */
+
+#contact #contact-methods ul li {
+  list-style-type: none; }
+
+/* line 70, ../../stylesheets/resume.sass */
+
+.experience {
+  width: 790px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1.25em;
+  display: block;
+  .date_duration {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    margin-bottom: 0.75em; } }
+
+/* line 8, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/utilities/general/_hacks.scss */
+
+/* line 73, ../../stylesheets/resume.sass */
+
+/* line 139, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+
+* html .experience .date_duration {
+  overflow-x: hidden; }
+
+/* line 76, ../../stylesheets/resume.sass */
+
+.experience .htitle {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+  margin-bottom: 0.75em; }
+
+/* line 139, ../../../../.rvm/gems/ree-1.8.7-2010.02/gems/compass-0.10.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+
+* html .experience .htitle {
+  overflow-x: hidden; }
+
+/* line 79, ../../stylesheets/resume.sass */
+
+.experience .htitle .title {
+  font-weight: bold; }
