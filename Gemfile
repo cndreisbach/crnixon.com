@@ -6,3 +6,5 @@ gem "padrino-helpers", "~> 0.9.22"
 gem 'nesta', ">= 0.9.5"
 gem 'redcarpet'
 
+
+gem 'unicorn'
